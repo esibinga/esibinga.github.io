@@ -25,7 +25,7 @@ div.grid{
 #cell {
     padding-top: 0%; 
     align-content: center;
-    background-color: rgba(173, 158, 150, 0.74); /*rgba(226, 218, 214, 0.712);*/
+    background-color: rgba(173, 158, 150, 0.4); /*rgba(226, 218, 214, 0.712);*/
     border-color: #FFFFFF;
     border-width: 2px;
     overflow: auto;
