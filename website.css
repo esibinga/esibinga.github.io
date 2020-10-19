@@ -1,8 +1,26 @@
 body{
     display: grid;
    background-color: rgb(179, 201, 221);
+   background:
+radial-gradient(circle farthest-side at 0% 50%,rgb(184, 206, 226) 23.5%,rgba(240,166,17,0) 0)21px 30px,
+radial-gradient(circle farthest-side at 0% 50%,#fffffe1a 24%,rgba(240,166,17,0) 0)19px 30px,
+linear-gradient(rgb(184, 206, 226) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,rgb(184, 206, 226) 0)0 0,
+linear-gradient(150deg,rgb(184, 206, 226) 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,rgb(184, 206, 226) 0)0 0,
+linear-gradient(30deg,rgb(184, 206, 226) 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,rgb(184, 206, 226) 0)0 0,
+linear-gradient(90deg,#fffffe1a 2%,rgb(184, 206, 226) 0,rgb(184, 206, 226) 98%,#fffffe1a 0%)0 0 rgb(184, 206, 226);
+background-size: 40px 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #FFFFFF;
+}
+
+div.h1h2{
+    border: .5mm solid #fff ;/*rgb(116, 108, 103);*/ 
+    box-shadow: 1px 1px 20px 2px rgb(116, 106, 100, 0.1);
+    background-color: rgb(184, 206, 226);   
+    max-width: 75%;
+    padding: 0% 2% 3% 2%;
+    margin: auto;
+    margin-top: 3%;
 }
 
 h1 {
@@ -15,12 +33,9 @@ h2 {
     text-align: center;
     font-weight: 200;
     font-size: 12pt;
-    max-width: 75%;
-    padding: 2% 4%;
-    margin: auto;
+
     color: #fff ; /* rgb(116, 108, 103); */
-    border: .5mm solid #fff ;/*rgb(116, 108, 103);*/ 
-    box-shadow: 1px 1px 20px 2px rgb(116, 106, 100, 0.1);
+
 }
 
 h3 {
@@ -29,7 +44,7 @@ h3 {
     font-size: 18pt;
     max-width: 75%;
     margin: auto;
-    color: rgb(116, 108, 103)
+    color: #fff /*rgb(116, 108, 103)*/
 }
 
 div.grid{
@@ -46,10 +61,11 @@ div.grid{
  #cell {
     padding-top: 0%; 
     align-content: center;
-    background-color: rgba(173, 158, 150, 0.4); /*rgba(226, 218, 214, 0.712);*/
+    /*background-color: rgba(173, 158, 150, 0.4); /*rgba(226, 218, 214, 0.712);*/
+    background-color: rgb(184, 206, 226);
     border-color: #FFFFFF;
     border-width: 2px;
-    overflow: auto;
+    overflow: hidden;
     padding-bottom: 40%;
     border: 0.1em solid #fff;
     box-shadow: 0px 0px 20px 2px  rgb(116, 106, 100, 0.2); 
@@ -58,7 +74,7 @@ div.grid{
 
 img { 
     width:80%; 
-    box-shadow: 1px 1px 20px 2px rgb(116, 106, 100);
+    box-shadow: 1px 1px 20px 2px rgba(116, 106, 100, 0.3);
     
 } 
 
