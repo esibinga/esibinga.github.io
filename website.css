@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-color: rgb(179, 201, 221);
+   background-color: rgb(179, 201, 221);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #FFFFFF;
 }
@@ -11,10 +11,31 @@ h1 {
     font-size: 32pt;
 }
 
+h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 12pt;
+    max-width: 75%;
+    padding: 2% 4%;
+    margin: auto;
+    color: #fff ; /* rgb(116, 108, 103); */
+    border: .5mm solid #fff ;/*rgb(116, 108, 103);*/ 
+    box-shadow: 1px 1px 20px 2px rgb(116, 106, 100, 0.1);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18pt;
+    max-width: 75%;
+    margin: auto;
+    color: rgb(116, 108, 103)
+}
+
 div.grid{
     display: grid;
     text-align: center;
-    height: 80%;
+    height: 95%;
     grid-column-gap: 4.5%;
     row-gap: 6%;
     grid-template-columns: 30% 30% 30%; 
@@ -22,7 +43,7 @@ div.grid{
     margin: 2%;
 }
 
-#cell {
+ #cell {
     padding-top: 0%; 
     align-content: center;
     background-color: rgba(173, 158, 150, 0.4); /*rgba(226, 218, 214, 0.712);*/
@@ -31,11 +52,32 @@ div.grid{
     overflow: auto;
     padding-bottom: 40%;
     border: 0.1em solid #fff;
-}
+    box-shadow: 0px 0px 20px 2px  rgb(116, 106, 100, 0.2); 
+} 
+
 
 img { 
     width:80%; 
+    box-shadow: 1px 1px 20px 2px rgb(116, 106, 100);
+    
 } 
+
+.about {
+    margin: auto;
+    width: 80%; 
+    box-shadow: none; 
+    font-weight: 200;
+    font-size: 12pt;
+    text-align: justify;
+}
+
+img.about {
+    margin: auto;
+    width: 100%; 
+    box-shadow: none;
+    border: 0.1em solid #fff;
+
+}
 
 footer {
     text-align: center;
