@@ -74,7 +74,6 @@ img {
     width:80%; 
     box-shadow: 1px 1px 20px 1px rgba(116, 106, 100, 0.1);
     border: .5mm solid  rgba(116, 106, 100, 0.5);
-    
 } 
 
 .about {
@@ -94,7 +93,6 @@ img.about {
 }
 
 div.about {
-    background-color: #463c3a ;
     margin: auto;
     width: 78%;
     padding: 1%;
