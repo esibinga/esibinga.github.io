@@ -1,25 +1,28 @@
 body{
     display: grid;
-   background-color: rgb(179, 201, 221);
-   background:
-        radial-gradient(circle farthest-side at 0% 50%,rgb(184, 206, 226) 23.5%,rgba(240,166,17,0) 0)21px 30px,
+   background-color: #fff; /*rgb(179, 201, 221);
+  /* background:
+        radial-gradient(circle farthest-side at 0% 50%,#463c3a 23.5%,rgba(240,166,17,0) 0)21px 30px,
         radial-gradient(circle farthest-side at 0% 50%,#fffffe1a 24%,rgba(240,166,17,0) 0)19px 30px,
-        linear-gradient(rgb(184, 206, 226) 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,rgb(184, 206, 226) 0)0 0,
-        linear-gradient(150deg,rgb(184, 206, 226) 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,rgb(184, 206, 226) 0)0 0,
-        linear-gradient(30deg,rgb(184, 206, 226) 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,rgb(184, 206, 226) 0)0 0,
-        linear-gradient(90deg,#fffffe1a 2%,rgb(184, 206, 226) 0,rgb(184, 206, 226) 98%,#fffffe1a 0%)0 0 rgb(184, 206, 226);
-    background-size: 40px 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #FFFFFF;
+        linear-gradient(#463c3a 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#463c3a 0)0 0,
+        linear-gradient(150deg,#463c3a 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,#463c3a 0)0 0,
+        linear-gradient(30deg,#463c3a 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,#463c3a 0)0 0,
+        linear-gradient(90deg,#fffffe1a 2%,#463c3a 0,#463c3a 98%,#fffffe1a 0%)0 0 #463c3a;
+    background-size: 40px 60px; */
+    font-family: 'Helvetica Neue'; /*'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+   
+    color: rgba(116, 106, 100); /* color: rgb(179, 201, 221); /* #FFFFFF;*/
 }
 /* thanks to Paul Salentiny for the majority of the hexagonal background css ^^ */
 
 div.h1h2 {
-    border: .5mm solid #fff;
-    box-shadow: 1px 1px 20px 2px rgb(116, 106, 100, 0.2);
-    background-color: rgb(184, 206, 226);   
+   /* border: .5mm solid  rgba(116, 106, 100); */
+    border-top: .5mm solid  rgba(116, 106, 100);
+    border-bottom: .5mm solid  rgba(116, 106, 100);
+    /*box-shadow: 1px 1px 20px 1px rgb(116, 106, 100, 0.1); 
+    /*background-color: rgb(179, 201, 221);   */
     max-width: 75%;
-    padding: 0% 2% 3% 2%;
+    padding: 0% 2% 2% 2%;
     margin: auto;
     margin-top: 3%;
 }
@@ -28,13 +31,16 @@ h1 {
     text-align: center;
     font-weight: 300;
     font-size: 32pt;
+    font-family: "Monaco", sans-serif;
+    color: rgba(116, 106, 100);
 }
 
 h2 {
     text-align: center;
     font-weight: 200;
     font-size: 12pt;
-    color: #fff; 
+    color: rgba(116, 106, 100); /*
+    color: rgb(179, 201, 221); /*#fff; */
 }
 
 h3 {
@@ -49,30 +55,39 @@ h3 {
 div.grid{
     display: grid;
     text-align: center;
-    height: 95%;
-    grid-column-gap: 4.5%;
-    row-gap: 6%;
-    grid-template-columns: 30% 30% 30%; 
+    height: 90%;
+    column-gap: 6.5%;
+    row-gap: 3%;
+    grid-template-columns: 29% 29% 29%;
     padding: 0%;
-    margin: 2%;
+    margin: 1% 4%;
 }
 
  #cell {
+    font-family: "Monaco", sans-serif;
+    font-size: small;
+    font-weight: 300;
+    font-family: 'Helvetica Neue';
     padding-top: 0%; 
     align-content: center;
-    background-color: rgb(184, 206, 226);
-    border-color: #FFFFFF;
-    border-width: 2px;
     overflow: hidden;
     padding-bottom: 40%;
-    border: 0.1em solid #fff;
-    box-shadow: 0px 0px 20px 2px  rgb(116, 106, 100, 0.2); 
+    border: .5mm solid  rgba(116, 106, 100);
+    box-shadow: 0px 0px 20px 1px  rgb(116, 106, 100, 0.1); 
 } 
 
+#gill{
+    font-family: "Monaco", sans-serif;
+    font-size: small;
+    color: rgba(116, 106, 100);
+    max-width: 95%;
+    margin: auto;
+}
 
 img { 
     width:80%; 
-    box-shadow: 1px 1px 20px 2px rgba(116, 106, 100, 0.3);
+    box-shadow: 1px 1px 20px 1px rgba(116, 106, 100, 0.1);
+    border: .5mm solid  rgba(116, 106, 100, 0.5);
     
 } 
 
@@ -93,7 +108,7 @@ img.about {
 }
 
 div.about {
-    background-color: rgb(184, 206, 226) ;
+    background-color: #463c3a ;
     margin: auto;
     width: 78%;
     padding: 1%;
@@ -102,5 +117,23 @@ div.about {
 
 footer {
     text-align: center;
-    padding-bottom: 3%;
+    padding: 2% 3% 2% 3%;
+    font-family: 'Monaco';
+    border-top: .5mm solid  rgba(116, 106, 100);
+    border-bottom: .5mm solid  rgba(116, 106, 100);
+    max-width: 75%;
+    margin: auto;
 }
+
+a:link {
+    color: rgb(51, 53, 85);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  a:visited {
+    color: rgb(51, 53, 85);
+    background-color: transparent;
+    text-decoration: none;
+  }
