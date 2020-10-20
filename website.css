@@ -1,26 +1,13 @@
 body{
     display: grid;
-   background-color: #fff; /*rgb(179, 201, 221);
-  /* background:
-        radial-gradient(circle farthest-side at 0% 50%,#463c3a 23.5%,rgba(240,166,17,0) 0)21px 30px,
-        radial-gradient(circle farthest-side at 0% 50%,#fffffe1a 24%,rgba(240,166,17,0) 0)19px 30px,
-        linear-gradient(#463c3a 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#463c3a 0)0 0,
-        linear-gradient(150deg,#463c3a 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,#463c3a 0)0 0,
-        linear-gradient(30deg,#463c3a 24%,#fffffe1a 0,#fffffe1a 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#fffffe1a 0,#fffffe1a 76%,#463c3a 0)0 0,
-        linear-gradient(90deg,#fffffe1a 2%,#463c3a 0,#463c3a 98%,#fffffe1a 0%)0 0 #463c3a;
-    background-size: 40px 60px; */
-    font-family: 'Helvetica Neue'; /*'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
-   
-    color: rgba(116, 106, 100); /* color: rgb(179, 201, 221); /* #FFFFFF;*/
+    background-color: #fff;
+    font-family: 'Helvetica Neue';
+    color: rgba(116, 106, 100);
 }
-/* thanks to Paul Salentiny for the majority of the hexagonal background css ^^ */
 
 div.h1h2 {
-   /* border: .5mm solid  rgba(116, 106, 100); */
     border-top: .5mm solid  rgba(116, 106, 100);
     border-bottom: .5mm solid  rgba(116, 106, 100);
-    /*box-shadow: 1px 1px 20px 1px rgb(116, 106, 100, 0.1); 
-    /*background-color: rgb(179, 201, 221);   */
     max-width: 75%;
     padding: 0% 2% 2% 2%;
     margin: auto;
@@ -39,8 +26,7 @@ h2 {
     text-align: center;
     font-weight: 200;
     font-size: 12pt;
-    color: rgba(116, 106, 100); /*
-    color: rgb(179, 201, 221); /*#fff; */
+    color: rgba(116, 106, 100); 
 }
 
 h3 {
