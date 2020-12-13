@@ -5,6 +5,19 @@ body{
     color: rgb(51,53,85);
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in white */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
 div.h1h2 {
     border-top: .5mm solid  rgb(51,53,85);
     border-bottom: .5mm solid  rgb(51,53,85);
