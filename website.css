@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-color: #fff;
+    background-color: rgb(243, 243, 246);
     font-family: 'Helvetica Neue';
     color: rgba(116, 106, 100);
 }
@@ -9,10 +9,67 @@ div.h1h2 {
     border-top: .5mm solid  rgba(116, 106, 100);
     border-bottom: .5mm solid  rgba(116, 106, 100);
     max-width: 75%;
-    padding: 0% 2% 2% 2%;
+    padding: 0% 2% 0% 2%;
     margin: auto;
     margin-top: 3%;
 }
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding: 10px 10px;
+    margin: auto;
+    font-family: monaco;
+    width: inherit;
+    border-bottom: .5mm solid  rgba(116, 106, 100);
+
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: center;
+    color: rgba(116, 106, 100);;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 2px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header .logo {
+    font-weight: 300;
+    font-size: 32pt;
+  }
+
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #f1f1f1;
+    color: rgb(51, 53, 85);
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    color: rgb(57, 119, 182);
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-center {
+      float: none;
+    }
+  }
 
 h1 {
     text-align: center;
@@ -21,7 +78,7 @@ h1 {
     font-family: "Monaco", sans-serif;
     color: rgba(116, 106, 100);
 }
-
+/*
 h2 {
     text-align: center;
     font-weight: 200;
@@ -37,26 +94,28 @@ h3 {
     margin: auto;
     color: #fff;
 }
-
+*/
 div.grid{
     display: grid;
     text-align: center;
     height: 90%;
-    column-gap: 6.5%;
-    row-gap: 3%;
-    grid-template-columns: 29% 29% 29%;
+    column-gap: 5.5%;
+    row-gap: 8%;
+    grid-template-columns: 30% 30% 30%; /*29.5% 29.5% 29.5%;*/
     padding: 0%;
     margin: 1% 4%;
 }
 
  #cell {
+    background-color: rgb(247, 247, 247);
     font-family: "Monaco", sans-serif;
+    min-width: 200px;
     font-size: small;
     font-weight: 300;
     font-family: 'Helvetica Neue';
     padding-top: 0%; 
     align-content: center;
-    overflow: hidden;
+    overflow: scroll;
     padding-bottom: 40%;
     border: .5mm solid  rgba(116, 106, 100);
     box-shadow: 0px 0px 20px 1px  rgb(116, 106, 100, 0.1); 
