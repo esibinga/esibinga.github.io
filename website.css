@@ -147,7 +147,7 @@ img {
 
 img.about {
     margin: auto;
-    width: 100%; 
+    width: 99.5%; 
     box-shadow: none;
     border: 0.1em solid #fff;
 }
@@ -157,6 +157,12 @@ div.about {
     width: 78%;
     padding: 1%;
     border: .5mm solid #fff ;
+    background-color: #fff;
+}
+
+#intro{
+  background-color: #fff;
+  line-height: 1.4;
 }
 
 footer {
