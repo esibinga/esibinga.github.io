@@ -3,6 +3,7 @@ body{
     background-color: rgb(51, 53, 85); /*rgb(243, 243, 246);*/
     font-family: 'Helvetica Neue';
     color: rgb(51,53,85);
+
 }
 
 html {
@@ -17,6 +18,9 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #fff;
 }
+::-webkit-scrollbar-corner {
+  background-color: rgb(208, 209, 215);; 
+ }
 
 div.h1h2 {
     border-top: .5mm solid  rgb(51,53,85);
@@ -27,7 +31,7 @@ div.h1h2 {
     margin-top: 3%;
 }
 
-/* Style the header with a grey background and some padding */
+/* Style the header with padding */
 .header {
     overflow: hidden;
     padding: 10px 10px;
@@ -45,7 +49,7 @@ div.h1h2 {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: .75rem; /*12px;*/
     line-height: 10px;
     border-radius: 2px;
   }
@@ -91,30 +95,16 @@ h1 {
     font-family: "Monaco", sans-serif;
     color: white; /* rgba(116, 106, 100);*/
 }
-/*
-h2 {
-    text-align: center;
-    font-weight: 200;
-    font-size: 12pt;
-    color: rgba(116, 106, 100); 
-}
 
-h3 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 18pt;
-    max-width: 75%;
-    margin: auto;
-    color: #fff;
-}
-*/
 div.grid{
     display: grid;
     text-align: center;
     height: 90%;
     column-gap: 5.5%;
     row-gap: 5%;
-    grid-template-columns: 30% 30% 30%; /*29.5% 29.5% 29.5%;*/
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+
+    /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*grid-template-columns: repeat(3, 1fr); */
     padding: 0%;
     margin: 1% 4%;
 }
@@ -200,3 +190,33 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
+
+
+  /* MOBILE */
+
+@media screen and (max-aspect-ratio: 4/5) { 
+  div.grid{
+    display: grid;
+    text-align: center;
+    height: 90%;
+    column-gap: 5.5%;
+    row-gap: 1%;
+    grid-template-columns: repeat(auto-fill, minmax(min(100rem, 100%), 1fr));
+    padding: 0%;
+    margin: 1% 8%;
+}
+.header a {
+  font-size: 1.25rem; 
+}
+
+#cell {
+  font-size: 1.25rem;
+  overflow: hidden;
+} 
+
+#gill{
+  font-size: 1.25rem;
+}
+
+}
+
