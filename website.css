@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-color: rgb(51, 53, 85); /*rgb(243, 243, 246);*/
+    background-color: white; /*rgb(51, 53, 85); /*rgb(243, 243, 246);*/
     font-family: 'Helvetica Neue';
     color: rgb(51,53,85);
 
@@ -45,7 +45,7 @@ div.h1h2 {
   /* Style the header links */
   .header a {
     float: center;
-    color: white; /* rgba(116, 106, 100);*/
+    color:rgba(116, 106, 100);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -93,7 +93,7 @@ h1 {
     font-weight: 300;
     font-size: 32pt;
     font-family: "Monaco", sans-serif;
-    color: white; /* rgba(116, 106, 100);*/
+    color: rgba(116, 106, 100);
 }
 
 div.grid{
@@ -101,7 +101,7 @@ div.grid{
     text-align: center;
     height: 90%;
     column-gap: 5.5%;
-    row-gap: 5%;
+    row-gap: 2%;
     grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
 
     /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*grid-template-columns: repeat(3, 1fr); */
@@ -110,7 +110,8 @@ div.grid{
 }
 
  #cell {
-    background-color: rgb(208, 209, 215); /* rgb(247, 247, 247);*/
+    background-color: pink ;/*rgb(208, 209, 215); /* rgb(247, 247, 247);*/
+    transition: all 0.5s ease;
     font-family: "Monaco", sans-serif;
     min-width: 200px;
     font-size: small;
@@ -118,12 +119,21 @@ div.grid{
     font-family: 'Helvetica Neue';
     padding-top: 0%; 
     align-content: center;
-    overflow: scroll;
+    overflow: hidden;
     padding-bottom: 40%;
     border-radius: 2px;
    /* border: .5mm solid  rgba(116, 106, 100);*/
-    box-shadow: 0px 0px 20px 1px  rgb(116, 106, 100, 0.1); 
+    box-shadow: 0px 0px 20px 1px  rgb(116, 106, 100, 0.1);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 } 
+
+/* Disable grayscale on hover */
+#cell:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
 
 #gill{
     font-family: "Monaco", sans-serif;
@@ -136,8 +146,17 @@ div.grid{
 img { 
     width:80%; 
     box-shadow: 1px 1px 20px 1px rgba(116, 106, 100, 0.1);
-    border: .5mm solid white ;/* rgba(116, 106, 100, 0.5);*/
+    border: .5mm solid white ;
+   /* filter: gray; /* IE6-9 */
+   /* -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    /*filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 } 
+/* Disable grayscale on hover 
+img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+*/
 
 .about {
     margin: auto;
@@ -179,14 +198,14 @@ footer {
 }
 
 a:link {
-    color: white; /*rgb(51, 53, 85);*/
+    color: rgb(51, 53, 85);
     background-color: transparent;
     text-decoration: none;
     font-weight: 400;
   }
   
   a:visited {
-    color: white; /*rgb(51, 53, 85);*/
+    color:rgb(51, 53, 85);
     background-color: transparent;
     text-decoration: none;
   }
@@ -210,6 +229,7 @@ a:link {
 }
 
 #cell {
+  font-family: "Monaco", sans-serif;
   font-size: 1.25rem;
   overflow: hidden;
 } 
