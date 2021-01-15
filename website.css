@@ -1,8 +1,10 @@
 body{
     display: grid;
-    background-color: rgb(51, 53, 85); /*rgb(243, 243, 246);*/
+    background-color: white; /*rgb(51, 53, 85); /*rgb(243, 243, 246);*/
     font-family: 'Helvetica Neue';
-    color: rgb(51,53,85);
+    /*color: rgba(116, 106, 100); /*rgb(51,53,85);*/
+    color: rgb(77, 70, 66);
+
 
 }
 
@@ -23,8 +25,8 @@ html {
  }
 
 div.h1h2 {
-    border-top: .5mm solid  rgb(51,53,85);
-    border-bottom: .5mm solid  rgb(51,53,85);
+   /* border-top: .5mm solid  rgb(51,53,85);*/
+    border-bottom: .5mm solid  rgba(116, 106, 100);
     max-width: 75%;
     padding: 0% 2% 0% 2%;
     margin: auto;
@@ -38,14 +40,13 @@ div.h1h2 {
     margin: auto;
     font-family: monaco;
     width: inherit;
-    border-bottom: .5mm solid  rgb(51,53,85);
-
+    border-bottom: .5mm solid  rgba(116, 106, 100);
   }
   
   /* Style the header links */
   .header a {
     float: center;
-    color: white; /* rgba(116, 106, 100);*/
+    color:rgba(116, 106, 100);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -62,14 +63,23 @@ div.h1h2 {
 
   /* Change the background color on mouse-over */
   .header a:hover {
-    background-color: #f1f1f1;
-    color: rgb(51, 53, 85);
+    background-color: pink; /*rgb(252, 223, 228); /* #f1f1f1;*/
+    color: white; /*rgb(51, 53, 85);*/
+    transition: all 0.5s ease;
   }
   
   /* Style the active/current link*/
   .header a.active {
-    color: rgb(57, 119, 182);
+    color: pink; /*rgb(57, 119, 182);*/
+    transition: all 0.5s ease;
   }
+
+  .header a.active:hover {
+    background-color: pink; /*rgb(252, 223, 228); /* #f1f1f1;*/
+    color: white; /*rgb(51, 53, 85);*/
+    transition: all 0.5s ease;
+  }
+
   
   /* Float the link section to the right */
   .header-right {
@@ -93,51 +103,77 @@ h1 {
     font-weight: 300;
     font-size: 32pt;
     font-family: "Monaco", sans-serif;
-    color: white; /* rgba(116, 106, 100);*/
+    color: rgba(116, 106, 100);
 }
 
 div.grid{
     display: grid;
     text-align: center;
-    height: 90%;
-    column-gap: 5.5%;
-    row-gap: 5%;
-    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
-
-    /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*grid-template-columns: repeat(3, 1fr); */
+    height: 100%;
+    min-height: calc(100vh - 100px);
+    column-gap: 4.5%;
+    row-gap: 2%;
+    grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));
     padding: 0%;
     margin: 1% 4%;
 }
 
  #cell {
-    background-color: rgb(208, 209, 215); /* rgb(247, 247, 247);*/
-    font-family: "Monaco", sans-serif;
+    background-color: rgb(252, 203, 211); /* this is grayed out except on hover */
+    transition: all 0.5s ease;
+    height: 75%;
     min-width: 200px;
     font-size: small;
+    font-family: "Roboto Slab", sans-serif; 
     font-weight: 300;
-    font-family: 'Helvetica Neue';
+    color: rgb(77, 70, 66); 
     padding-top: 0%; 
     align-content: center;
-    overflow: scroll;
-    padding-bottom: 40%;
-    border-radius: 2px;
-   /* border: .5mm solid  rgba(116, 106, 100);*/
-    box-shadow: 0px 0px 20px 1px  rgb(116, 106, 100, 0.1); 
+    overflow: hidden;
+    padding-bottom: 20%;
+    border-radius: 6px;
+   /* border: .5mm solid  rgba(116, 106, 100);
+    box-shadow: 0px 0px 20px 1px  rgb(116, 106, 100, 0.1);*/
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    opacity: 0.75;
 } 
 
-#gill{
-    font-family: "Monaco", sans-serif;
-    font-size: small;
-    color: rgb(51,53,85);
-    max-width: 95%;
-    margin: auto;
+#gill{  /* header in cell */
+  font-family: "Roboto Slab", sans-serif; 
+  font-weight: 400;
+  color: rgb(77, 70, 66); 
+  font-size: small;
+  max-width: 95%;
+  margin: auto;
+  /*color: rgba(116, 106, 100); /*color: black; /* this could be softer */
+} 
+
+/* Disable grayscale on hover */
+#cell:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  opacity: 1;
+  box-shadow: 0 0 0 1px  rgb(116, 106, 100, 1);
+  transition: opacity 1s ease;
 }
+
 
 img { 
     width:80%; 
     box-shadow: 1px 1px 20px 1px rgba(116, 106, 100, 0.1);
-    border: .5mm solid white ;/* rgba(116, 106, 100, 0.5);*/
+    border: .5mm solid white ;
+   /* filter: gray; /* IE6-9 */
+   /* -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    /*filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 } 
+/* Disable grayscale on hover 
+img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+*/
 
 .about {
     margin: auto;
@@ -172,21 +208,28 @@ footer {
     text-align: center;
     padding: 2% 3% 2% 3%;
     font-family: 'Monaco';
-    border-top: .5mm solid  rgb(51,53,85);
-    border-bottom: .5mm solid  rgb(51,53,85);
+  /*  border-top: .5mm solid  rgb(51,53,85);
+    border-bottom: .5mm solid  rgb(51,53,85);*/
     max-width: 80%;
     margin: auto;
+    margin-top: 100px; 
+    height: 30px;
 }
 
+/* style icons on hover */
+.fab:hover, .fas:hover {
+  color: pink
+  }
+
 a:link {
-    color: white; /*rgb(51, 53, 85);*/
+    color: rgba(116, 106, 100);
     background-color: transparent;
     text-decoration: none;
     font-weight: 400;
   }
   
   a:visited {
-    color: white; /*rgb(51, 53, 85);*/
+    color:rgba(116, 106, 100);
     background-color: transparent;
     text-decoration: none;
   }
@@ -210,6 +253,7 @@ a:link {
 }
 
 #cell {
+  font-family: "Monaco", sans-serif;
   font-size: 1.25rem;
   overflow: hidden;
 } 
