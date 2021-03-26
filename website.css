@@ -4,8 +4,6 @@ body{
     font-family: 'Helvetica Neue';
     /*color: rgba(116, 106, 100); /*rgb(51,53,85);*/
     color: rgb(77, 70, 66);
-
-
 }
 
 html {
@@ -112,7 +110,7 @@ div.grid{
     min-height: calc(100vh - 100px);
     column-gap: 4.5%;
     row-gap: 2%;
-    grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));    
     padding: 0%;
     margin: 1% 4%;
 }
@@ -156,7 +154,7 @@ div.grid{
   transition: opacity 1s ease;
 }
 
-
+/* format images */
 img { 
     width:80%; 
     box-shadow: 1px 1px 20px 1px rgba(116, 106, 100, 0.1);
@@ -164,6 +162,7 @@ img {
 } 
 
 
+/* format about page */
 .about {
     margin: auto;
     width: 80%; 
@@ -182,12 +181,29 @@ img.about {
     border: 0.1em solid #fff;
 }
 
+/* img.about.vertical {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+    border: 0.1em solid #fff;
+} */
+
 div.about {
     margin: auto;
     width: 78%;
     padding: 1%;
     border: .5mm solid #fff ;
     background-color: #fff;
+}
+div.about.vertical {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: none;
+  border: 0.1em solid #fff;
 }
 
 #intro{
