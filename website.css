@@ -41,7 +41,7 @@ div.h1h2 {
   }
   
   /* Style the header links */
-  .header a {
+.header a {
     float: center;
     color:rgba(116, 106, 100);
     text-align: center;
@@ -51,7 +51,7 @@ div.h1h2 {
     line-height: 10px;
     border-radius: 2px;
   }
-  
+
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header .logo {
     font-weight: 300;
@@ -59,19 +59,20 @@ div.h1h2 {
   }
 
   /* Change the background color on mouse-over */
-  .header a:hover {
+  a:hover, .header a:hover {
     background-color: pink; 
     color: white; 
     transition: all 0.5s ease;
   }
+
   
   /* Style the active/current link*/
-  .header a.active {
+  a.active, .header a.active {
     color: pink;
     transition: all 0.5s ease;
   }
 
-  .header a.active:hover {
+  a.active:hover, .header a.active:hover {
     background-color: pink; 
     color: white; 
     transition: all 0.5s ease;
@@ -269,5 +270,27 @@ a:link {
   font-size: 1.25rem;
 }
 
+}
+
+.watercolor {
+  padding-left: 20%;
+  padding-right: 20%;
+  /* padding-bottom: 2%; */
+
+  /* font-family: 'Helvetica Neue'; */
+  font-family: "Roboto Slab", sans-serif; 
+
+}
+
+.wtr-a:link{
+  font-size: 1rem; /*12px;*/
+  padding: 0px;
+  color: rgb(194, 112, 128); 
+}
+
+.wtr-a:visited{
+  font-size: 1rem; /*12px;*/
+  padding: 0px;
+  color: rgb(194, 112, 128); 
 }
 
