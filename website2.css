@@ -1,0 +1,112 @@
+body{
+    display: grid;
+    background-color: white; /*rgb(51, 53, 85); /*rgb(243, 243, 246);*/
+    font-family: 'Helvetica Neue';
+    /*color: rgba(116, 106, 100); /*rgb(51,53,85);*/
+    color: rgb(77, 70, 66);
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in white */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: rgb(208, 209, 215);; 
+   }
+  
+  div.h1h2 {
+      /* border-bottom: .5mm solid  rgba(116, 106, 100); */
+      max-width: 75%;
+      padding: 0% 2% 0% 2%;
+      margin: auto;
+      margin-top: 3%;
+      display: contents;
+  }
+
+  .h1h2 img{
+    width: 50vw;
+    height: 12vh;
+    margin: auto;
+    margin-top: 10vh;
+  }
+
+/* Style the header with padding */
+.header {
+    overflow: hidden;
+    padding: 10px 10px;
+    margin: auto;
+    font-family: monaco;
+    width: inherit;
+    border-bottom: .5mm solid  rgba(116, 106, 100);
+  }
+  
+  /* Style the header links */
+.header a {
+    float: center;
+    color:rgba(116, 106, 100);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: .75rem; /*12px;*/
+    line-height: 10px;
+    border-radius: 2px;
+  }
+
+footer {
+    text-align: center;
+    padding: 2% 3% 2% 3%;
+    font-family: 'Monaco';
+  /*  border-top: .5mm solid  rgb(51,53,85);
+    border-bottom: .5mm solid  rgb(51,53,85);*/
+    max-width: 80%;
+    margin: auto;
+    /* margin-top: 10px;  */
+    height: 30px;
+}
+
+/* Syle grid, cells */
+
+.grid{
+  display: grid;
+  text-align: center;
+  height: 30vh;
+  /* min-height: calc(100vh - 100px); */
+  column-gap: 20%;
+  row-gap: 2%;
+  grid-template-columns: .9fr 1fr 1.3fr; /*repeat(auto-fill, minmax(min(10rem, 100%), 1fr));    */
+  padding: 0% 8% 0% 15%;
+  margin: 8% 4% 8% 4%;
+}
+.cell {
+  height: 50vh;
+}
+
+/* img{
+  max-width:100%;
+max-height:100%;
+} */
+
+/* style icons on hover */
+.fab:hover, .fas:hover {
+  color: pink
+  }
+
+a:link {
+    color: rgba(116, 106, 100);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  a:visited {
+    color:rgba(116, 106, 100);
+    background-color: transparent;
+    text-decoration: none;
+  }
