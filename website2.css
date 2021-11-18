@@ -37,6 +37,17 @@ html {
     margin-top: 10vh;
   }
 
+  #my-name{ 
+    box-shadow: none;
+    border: none;
+  } 
+
+  #subhead{
+    margin: 5vh 10vh 5vh 10vh;
+    justify-self: center;
+    transform: scale(.6);
+  }
+
 /* Style the header with padding */
 .header {
     overflow: hidden;
@@ -71,7 +82,7 @@ footer {
     height: 30px;
 }
 
-/* Syle grid, cells */
+/* Style homepage grid */
 
 .grid{
   display: grid;
@@ -79,8 +90,9 @@ footer {
   height: 30vh;
   /* min-height: calc(100vh - 100px); */
   column-gap: 20%;
-  row-gap: 2%;
+  row-gap: 10%;
   grid-template-columns: .9fr 1fr 1.3fr; /*repeat(auto-fill, minmax(min(10rem, 100%), 1fr));    */
+  grid-template-areas: "writing dataviz design";
   padding: 0% 8% 0% 15%;
   margin: 8% 4% 8% 4%;
 }
@@ -88,10 +100,18 @@ footer {
   height: 50vh;
 }
 
-/* img{
-  max-width:100%;
-max-height:100%;
-} */
+img.text{
+  opacity: .25;
+}
+
+.text:hover {
+  opacity: 1;
+  transition: ease-in-out 1s;
+}
+
+div.artdesign.text {
+  padding: 0% 32% 0% 16%;
+}
 
 /* style icons on hover */
 .fab:hover, .fas:hover {
@@ -110,3 +130,66 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
+
+
+  /* data viz page */
+
+  div.viz-grid{
+    display: grid;
+    text-align: center;
+    height: 100%;
+    min-height: calc(100vh - 100px);
+    column-gap: 4.5%;
+    row-gap: 2%;
+    grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));    
+    padding: 0%;
+    margin: 1% 4%;
+}
+
+#cell {
+  /*background-color: rgb(248, 239, 239); /* rgb(252, 203, 211, .5); this is grayed out except on hover*/
+  transition: all 0.5s ease;
+  height: 75%;
+  min-width: 200px;
+  font-size: small;
+  font-family: "Roboto Slab", sans-serif; 
+  font-weight: 300;
+  color: rgb(77, 70, 66); 
+  padding-top: 0%; 
+  align-content: center;
+  overflow: hidden;
+  padding-bottom: 18%;
+  background-image: url("./images/container-box.svg");
+  background-repeat: no-repeat;
+  background-color: wheat;
+  /* box-shadow: 0 0 0 10px  rgb(252, 203, 211); /* cardboard: rgb(167,144,117); dark gray: rgb(116, 106, 100, 1); */
+  /* filter: gray; /* IE6-9 *
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ *
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  opacity: 0.75; 
+} 
+
+#gill{  /* header in cell */
+font-family: "Roboto Slab", sans-serif; 
+font-weight: 400;
+color: rgb(77, 70, 66); 
+font-size: small;
+max-width: 95%;
+margin: auto;
+} 
+
+/* Disable grayscale on hover */
+#cell:hover {
+/* -webkit-filter: grayscale(0); */
+/* filter: none; */
+opacity: 1;
+transition: opacity 1s ease;
+}
+
+/* format images */
+img.dataviz { 
+  width: 80%; 
+  box-shadow: 1px 1px 20px 1px rgba(116, 106, 100, 0.1);
+  border: .5mm solid black ;
+} 
+
