@@ -1,3 +1,5 @@
+/* 2022 web update, linked to index.html */
+
 body{
     display: grid;
     background-color: white; /*rgb(51, 53, 85); /*rgb(243, 243, 246);*/
@@ -47,6 +49,21 @@ html {
     justify-self: center;
     transform: scale(.6);
   }
+  #subhead-writing{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    transform: scale(.8);
+
+  }
+  #subhead-art{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    transform: scale(.8);
+  }
+  /* .subhead-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  } */
 
 /* Style the header with padding */
 .header {
@@ -78,7 +95,7 @@ footer {
     border-bottom: .5mm solid  rgb(51,53,85);*/
     max-width: 80%;
     margin: auto;
-    /* margin-top: 10px;  */
+    margin-top: 10px; 
     height: 30px;
 }
 
@@ -106,7 +123,7 @@ img.text{
 
 .text:hover {
   opacity: 1;
-  transition: ease-in-out 1s;
+  transition: ease-in-out .75s;
 }
 
 div.artdesign.text {
@@ -144,7 +161,30 @@ a:link {
     grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));    
     padding: 0%;
     margin: 1% 4%;
+    opacity: 1.0;
 }
+
+.viz-grid:hover > div{
+opacity: 0.5;
+transition: all 0.5s ease;
+
+}
+.viz-grid:hover > div:hover{
+  opacity: 1;
+  transition: all 0.5s ease;
+
+  }
+
+.viz-grid:hover > a{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+
+    }
+.viz-grid:hover > a:hover{
+      opacity: 1;
+      transition: all 0.5s ease;
+
+      }
 
 #cell {
   /*background-color: rgb(248, 239, 239); /* rgb(252, 203, 211, .5); this is grayed out except on hover*/
@@ -159,14 +199,18 @@ a:link {
   align-content: center;
   overflow: hidden;
   padding-bottom: 18%;
-  background-image: url("./images/container-box.svg");
+  background-color: rgb(250, 242, 226);
+  background-image: url("./images/container-box-skinny-2.svg");
   background-repeat: no-repeat;
-  background-color: wheat;
+  background-size: auto;
+  background-position: center;
+  margin: 3%;
+  /* background-color: white; */
   /* box-shadow: 0 0 0 10px  rgb(252, 203, 211); /* cardboard: rgb(167,144,117); dark gray: rgb(116, 106, 100, 1); */
-  /* filter: gray; /* IE6-9 *
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ *
-  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-  opacity: 0.75; 
+  /* filter: blur(1px); /* IE6-9 */
+  /* -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ * */
+  /*filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  /*opacity: 0.5; */
 } 
 
 #gill{  /* header in cell */
@@ -176,15 +220,38 @@ color: rgb(77, 70, 66);
 font-size: small;
 max-width: 95%;
 margin: auto;
+padding-left: 5%;
+padding-right: 5%;
 } 
 
-/* Disable grayscale on hover */
+#cell-bottom{
+padding-left: 5%;
+padding-right: 5%;
+font-weight: 200;
+color: rgb(43, 39, 37);
+}
+
+/* Disable blur on hover */
 #cell:hover {
 /* -webkit-filter: grayscale(0); */
 /* filter: none; */
-opacity: 1;
-transition: opacity 1s ease;
+/* opacity: 1; */
+/* transition: opacity 2s ease; */
+/* animation: blur 1s linear forwards; */
 }
+
+#cell:not(:hover) {
+  /* -webkit-filter: grayscale(0); */
+  /* filter: none; */
+  /* transition: opacity 2s ease; */
+  /* animation: blur 1s linear forwards; */
+  /* background-color: white; */
+  /* box-shadow: 0 0 0 10px  rgb(252, 203, 211); /* cardboard: rgb(167,144,117); dark gray: rgb(116, 106, 100, 1); */
+  /* filter: blur(1px); IE6-9 */
+  /* -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ * */
+  /*filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  /* opacity: 0.5;  */
+  }
 
 /* format images */
 img.dataviz { 
@@ -193,3 +260,66 @@ img.dataviz {
   border: .5mm solid black ;
 } 
 
+
+
+
+/* format about page */
+.about {
+  margin: auto;
+  width: 80%; 
+  box-shadow: none; 
+  font-weight: 200;
+  font-size:  12pt; 
+  text-align: justify;
+  font-family: "Roboto Slab", sans-serif; 
+  font-weight: 300;
+}
+
+img.about {
+  margin: auto;
+  width: 99.5%; 
+  box-shadow: none;
+  border: 0.1em solid #fff;
+}
+
+/* img.about.vertical {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: none;
+  border: 0.1em solid #fff;
+} */
+
+div.about {
+  margin: auto;
+  width: 78%;
+  padding: 1%;
+  border: .5mm solid #fff ;
+  background-color: #fff;
+}
+div.about.vertical {
+width: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+box-shadow: none;
+border: 0.1em solid #fff;
+}
+
+#intro{
+background-color: #fff;
+line-height: 1.4;
+}
+
+footer {
+  text-align: center;
+  padding: 2% 3% 2% 3%;
+  font-family: 'Monaco';
+/*  border-top: .5mm solid  rgb(51,53,85);
+  border-bottom: .5mm solid  rgb(51,53,85);*/
+  max-width: 80%;
+  margin: auto;
+  margin-top: 100px; 
+  height: 30px;
+}
