@@ -3,62 +3,74 @@
 <html lang="en">
 
 <head>
-    <title>art & design</title>
+    <title>Eva - art & design</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="website.css">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="website2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@400&?family=Open+Sans:wght@300&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <script src="https://kit.fontawesome.com/68fa9d8bd0.js" crossorigin="anonymous"></script>
-
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./main.js"></script>
 </head>
+
 <div class="h1h2">
-    <h1>
-        Eva Sibinga
-    </h1>
+    <img name="name" id="my-name" src="images/name.svg" alt="eva sibinga">
+    <img name="subhead" id="subhead-art" src="images/art_design_txt_1line.svg" alt="art and design">
 </div>
-<div class="header">
-    <div class="header-right">
-        <a href="https://esibinga.github.io/home/">data viz</a>
-        <a class="active" href="https://esibinga.github.io/home/art.html">art & design</a>
-        <a href="https://esibinga.github.io/home/about.html">about</a>
+
+<div class="viz-grid">
+    <div class="left hexagon" id="cell">
+        <br><br>
+        <div id="gill"> Birds
+        </div>
+        <br> <br>
+        <img class="dataviz" src="images/white-throated-sparrow.jpeg">
+        </a>
+        <br> <br> full page soon to come : )<br> <br>
     </div>
-</div>
-<br> <br>
 
-<div class="about" name="wts">
-    <img class="about" name="wts" src="images/white-throated-sparrow.jpeg"
-        alt="Pen and watercolor drawing of a White-Throated Sparrow. Brown and white sparrow with yellow eyebrows.">
-</div>
-<br>
-<!--
-    TODO: crop bluebird, whiten background
--->
-<div class="about vertical" name="bluebird">
-    <img class="about" name="bluebird" src="images/bluebird.jpeg" alt="Pen and watercolor drawing of a bluebird.">
-</div>
-<br>
-<div class="about" name="hermit">
-    <img class="about" name="hermit" src="images/hermit-thrush.png"
-        alt="Pen and watercolor drawing of a Hermit Thrush. Brown and white, robin-sized bird with a speckled breast.">
-</div>
-<br>
-<div class="about" name="plover">
-    <img class="about" name="plover" src="images/plover.png"
-        alt="Pen and watercolor drawing of a Piping Plover. Small, taupe colored shorebird with orange legs and bill.">
-</div>
-<br>
+    <!--a target="_blank" href="https://esibinga.github.io/home/watercolorviz.html" /> </a-->
+    <div class="right hexagon" id="cell"> <br><br>
+        <div id="gill">Data Dozen color palette<br> <br>
+        </div>
+        <br>
 
-<div class="about">
-    Birds are cute and interesting! They've been my latest inspiration for things to draw. Each one here is done in
-    pencil, ink, and watercolor. From the top down,
-    they are a White-throated Sparrow, Eastern Bluebird, Hermit Thrush, and
-    Piping Plover.
-</div>
+        <img class="dataviz" name="IM" src="images/data-dozen-palette.png"
+            alt="Color swatches and combinations in bright, cheerful range of slightly muted rainbow hues.">
+        <br> <br>
+        color palette & swatches<br>
+    </div>
 
 
 
+    <a target="_blank" href=https://tesviz.commons.gc.cuny.edu/2020/11/02/countdown-to-november-3>
+        <div class="right hexagon" id="cell"> <br><br>
+            <div id="gill">Countdown to November 3 </div>
+            <br>
+            <img class="dataviz" name="postcard" src="images/Postcard1.jpeg">
+            <br> <br>
+            pen & postcards | linoleum block print
+        </div>
+    </a>
+
+    <a target="_blank" href="https://github.com/esibinga/portfolio/blob/master/Puget%20Sound%20Shipwrecks.pdf">
+        <div class="left hexagon" id="cell"> <br><br>
+            <div id="gill">Beyond the Graveyard of the Pacific </div>
+            <br><br>
+            <img class="dataviz" name="puget-sound" src="images/puget-sound.png">
+            <br><br>
+            ArcGIS | PowerPoint
+        </div>
+    </a>
+
+
+</div>
+
+<br><br>
 <footer>
     <a target="_blank" href='https://github.com/esibinga'><i class="fab fa-github"></i></a> |
     <a target="_blank" href='https://www.linkedin.com/in/eva-sibinga-729b18aa/'><i class="fab fa-linkedin"></i></a> |
@@ -72,6 +84,5 @@
     </a>
 </footer>
 <br>
-
 
 </html>
