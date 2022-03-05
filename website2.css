@@ -325,3 +325,8 @@ footer {
   margin-top: 100px; 
   height: 30px;
 }
+
+#about-footer {
+  /* padding: 2% 3% 2% 3%; */
+  height: 30px;
+}
